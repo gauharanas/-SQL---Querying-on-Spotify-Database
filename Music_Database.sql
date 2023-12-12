@@ -53,7 +53,7 @@ order by Total_invoice desc;
   group by  customer.customer_id, CONCAT(first_name,' ',last_name) 
   order by total_spendind desc;
 
- --Ans-: The customer who has spent the most money is Frantiöek Wichterlov· with customer Id 5 , has a total spending of 144.539998054504
+ --Ans-: The customer who has spent the most money is Franti≈°ek Wichterlov√° with customer Id 5 , has a total spending of 144.539998054504
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -140,7 +140,7 @@ WITH popular_genre AS
 	GROUP BY  customer.country, genre.name, genre.genre_id  
 	ORDER BY country ASC,  purchases  DESC
 )
-SELECT * FROM popular_genre WHERE RowNo <= 1
+SELECT * FROM popular_genre WHERE RowNo <= 1;
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
